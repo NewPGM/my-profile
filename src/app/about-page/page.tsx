@@ -26,7 +26,7 @@ export default function About() {
           <div className={`w-full md:w-1/3 transition-all duration-700 delay-300 ease-out ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-[-50px] opacity-0'}`}>
             <div className="relative w-64 h-64 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-orange-500 shadow-xl">
               <Image 
-                src="/images/profile.jpg" 
+                src="/images/64143109.jpg" 
                 alt="โปรไฟล์" 
                 fill
                 className="object-cover"
@@ -103,7 +103,7 @@ export default function About() {
                 ดาวน์โหลด Resume
               </a>
               <a 
-                href="#contact" 
+                href="/contact-page" 
                 className="px-6 py-3 border border-orange-500 text-orange-500 font-medium rounded-lg hover:bg-orange-500 hover:text-white transition-colors"
               >
                 ติดต่อฉัน
