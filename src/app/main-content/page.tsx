@@ -1,4 +1,5 @@
-export default function MainPage() {
+
+export default function Maincontent() {
   return (
     <div>
       <div className="flex justify-between items-center max-w-6xl mx-auto mt-20 px-4">
@@ -12,7 +13,7 @@ export default function MainPage() {
             โดยหวังว่าจะได้นำความรู้และประสบการณ์มาใช้ให้เกิดประโยชน์กับองค์กรครับ
           </div>
         </div>
-        <div className="flex-1 flex justify-center">
+        <div className=" flex justify-center">
           <div className="w-96 h-96  rounded-lg flex items-center justify-center">
             <img src="/images/devicon_nextjs.png" alt="" />
           </div>
