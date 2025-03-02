@@ -4,7 +4,7 @@ import About from "../about-content/page";
 import Portfolio from "../portfolio/page";
 import { useEffect, useState } from "react";
 
-export default function HomePage() {
+function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
     
   useEffect(() => {
@@ -24,3 +24,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+export default HomePage;

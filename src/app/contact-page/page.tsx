@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, ChangeEvent, FormEvent } from "react";
 
-export default function Contact() {
+ function Contact() {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -95,7 +95,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">อีเมล:</h4>
-                    <p className="text-gray-400">example@email.com</p>
+                    <p className="text-gray-400">newstroy1932002@email.com</p>
                   </div>
                 </div>
 
@@ -112,7 +112,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">โทรศัพท์:</h4>
-                    <p className="text-gray-400">099-999-9999</p>
+                    <p className="text-gray-400">081-004-3967</p>
                   </div>
                 </div>
 
@@ -133,7 +133,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">ที่อยู่:</h4>
-                    <p className="text-gray-400">กรุงเทพมหานคร, ประเทศไทย</p>
+                    <p className="text-gray-400">277 ม.18 ต.บ้านแปะ อ.จอมทอง จ.เชียงใหม</p>
                   </div>
                 </div>
               </div>
@@ -141,20 +141,22 @@ export default function Contact() {
               <h3 className="text-xl font-semibold mb-4">โซเชียลมีเดีย</h3>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/NewPGM"
+                  target="_blank"
                   className="text-gray-400 hover:text-orange-500 transition-colors"
                 >
                   <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.489.5.092.682-.217.682-.481 0-.237-.008-.865-.013-1.696-2.782.603-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.378.202 2.398.1 2.651.64.699 1.026 1.592 1.026 2.683 0 3.841-2.337 4.687-4.565 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-                  </svg>
+  className="w-6 h-6"
+  fill="currentColor"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm9.5 2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 6.5A5.5 5.5 0 1 1 6.5 12 5.51 5.51 0 0 1 12 6.5zm0 1.5A4 4 0 1 0 16 12a4 4 0 0 0-4-4z" />
+</svg>  
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100063983498112"
+                  target="blank"
                   className="text-gray-400 hover:text-orange-500 transition-colors"
                 >
                   <svg
@@ -301,3 +303,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default Contact;

@@ -6,9 +6,10 @@ interface BasicCardProps {
   description: string;
   imageUrl?: string;
   className?: string;
+  onClick?: () => void;
 }
 
-export const BasicCard: React.FC<BasicCardProps> = ({ title, description, imageUrl, className = "" }) => {
+export const BasicCard: React.FC<BasicCardProps> = ({ title, description, imageUrl, className = "",onClick }) => {
   const [isVisible, setIsVisible] = useState(false);
   
   useEffect(() => {
@@ -21,13 +22,14 @@ export const BasicCard: React.FC<BasicCardProps> = ({ title, description, imageU
   }, []);
   
   return (
-    <div 
+    <button 
       className={`
         overflow-hidden rounded-lg shadow-md bg-white dark:bg-gray-800 
         transition-all duration-500 ease-out hover:scale-105 hover:transition-all
         ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}
         ${className}
       `}
+      onClick={onClick}
     >
       {imageUrl && (
         <img 
@@ -40,6 +42,6 @@ export const BasicCard: React.FC<BasicCardProps> = ({ title, description, imageU
         <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{title}</h3>
         <p className="text-gray-700 dark:text-gray-300">{description}</p>
       </div>
-    </div>
+    </button>
   );
 };

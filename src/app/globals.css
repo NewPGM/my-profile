@@ -54,7 +54,7 @@ nav {
 
 .text-hilight {
   display: inline-block;
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: bold;
   text-decoration: none;
   background: linear-gradient(90deg, rgba(255, 178, 0, 1) 0%, rgba(255, 81, 0, 1) 100%);

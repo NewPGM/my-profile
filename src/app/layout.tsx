@@ -1,7 +1,7 @@
 
 import "./globals.css";;
 
-export default function RootLayout({
+ function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -11,7 +11,7 @@ export default function RootLayout({
       <body>
       <nav>
         <div className="flex items-center justify-between w-full ">
-        <p className="text-hilight">Portfolio Website</p>
+        <p className="text-hilight text-2xl font-bold">Portfolio Website</p>
         <div className="flex gap-8">
         <a href="/home-page">Home</a>
         <a href="/about-page">About</a>
@@ -29,8 +29,8 @@ export default function RootLayout({
             <div className="text-highlight text-2xl font-bold mb-4">Portfolio Website</div>
             <p className="text-gray-400 mb-4">พัฒนาด้วยความตั้งใจและความมุ่งมั่น</p>
             <div className="text-gray-400">
-              <p className="mb-1">อีเมล: example@email.com</p>
-              <p className="mb-1">โทร: 099-999-9999</p>
+              <p className="mb-1">อีเมล: newstroy1932002@email.com</p>
+              <p className="mb-1">โทร: 081-004-3967</p>
             </div>
           </div>
           
@@ -72,3 +72,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;

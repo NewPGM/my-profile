@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export default function About() {
+ function About() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function About() {
           <div className={`w-full md:w-2/3 transition-all duration-700 delay-500 ease-out ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-50 opacity-0'}`}>
             <h3 className="text-2xl font-bold mb-4">Web Developer</h3>
             <p className="text-gray-300 mb-6">
-              สวัสดีครับ ผมชื่อ [ชื่อของคุณ] เป็น Front-End Developer ที่มีความหลงใหลในการพัฒนาเว็บไซต์ที่สวยงามและใช้งานง่าย 
+              สวัสดีครับ ผมชื่อ นายจีระศักดิ์ ต๋าใจ ผมมีความหลงใหลในการพัฒนาเว็บไซต์ที่สวยงามและใช้งานง่าย 
               ผมเป็นคนชอบเรียนรู้สิ่งใหม่ๆ และพัฒนาตัวเองอยู่เสมอ มีความมุ่งมั่นตั้งใจในการทำงาน 
               ผมมีความสนใจในด้านเทคโนโลยีและการพัฒนาซอฟต์แวร์ โดยหวังว่าจะได้นำความรู้และประสบการณ์มาใช้ให้เกิดประโยชน์กับองค์กรครับ
             </p>
@@ -69,7 +69,15 @@ export default function About() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
-                  <span>UX/UI Design</span>
+                  <span>Vue.js</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                  <span>Nuxt.js</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                  <span>Rest API</span>
                 </div>
               </div>
             </div>
@@ -82,25 +90,25 @@ export default function About() {
                   <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
                   <span className="font-medium">ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์</span>
                 </div>
-                <p className="text-gray-400 ml-4">มหาวิทยาลัย XXXXX, 2560-2564</p>
+                <p className="text-gray-400 ml-4">มหาวิทยาลัยราชภัฏเชียงใหม่, 2564-2567</p>
               </div>
               <div>
                 <div className="flex items-center mb-1">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
                   <span className="font-medium">มัธยมศึกษาตอนปลาย</span>
                 </div>
-                <p className="text-gray-400 ml-4">โรงเรียน XXXXX, 2557-2560</p>
+                <p className="text-gray-400 ml-4">โรงเรียน ฮอดพิยาคม, 2559-2564</p>
               </div>
             </div>
 
             {/* ปุ่ม */}
             <div className="mt-8 flex gap-4">
               <a 
-                href="/resume.pdf" 
+                href="https://resume.superresume.com/ViewResume?Key=RZkQEQkaibtiD5yQQxxZidIZNZF&Enc=bUyLVrUKBwaMvEsiiVcUSMViTSWTgo&_gl=1*1k36lvy*_gcl_aw*R0NMLjE3NDA2NDg0MTkuQ2p3S0NBaUF0NEMtQmhCY0Vpd0E4S3AwQ1YtZUlFSkg3dXJ2ZjVhdDRPOUJ2ZGxCRGh4cFgyZ2FzVm45ZlBzY24wUEhuMFBzQUpTb014b0M0LTRRQXZEX0J3RQ..*_gcl_au*MTAxNjMxMTc0LjE3NDA2NDg0MTQuOTQ4NjY5MDM2LjE3NDA2NDg0NDMuMTc0MDY0ODUzNg..*_ga*MTYyNjAzNjMwMC4xNzQwNjQ4NDE0*_ga_QWCXJT2JHN*MTc0MDY0ODQxNS4xLjEuMTc0MDY0ODU0MS41OC4wLjA.&_ga=2.130987846.819802818.1740648414-1626036300.1740648414&_gac=1.191660504.1740648415.CjwKCAiAt4C-BhBcEiwA8Kp0CV-eIEJH7urvf5at4O9BvdlBDhxpX2gasVn9fPscn0PHn0PsAJSoMxoC4-4QAvD_BwE" 
                 target="_blank"
                 className="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors"
               >
-                ดาวน์โหลด Resume
+                เปิด Super Resume
               </a>
               <a 
                 href="/contact-page" 
@@ -115,3 +123,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;
