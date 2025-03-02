@@ -1,12 +1,11 @@
 "use client";
 import { Button } from "@/app/component/common/Button";
-import { BasicCard } from "@/app/component/common/card";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import ProjectCard from "@/app/component/common/ProjectCard";
 import EducationCard from "../component/common/EducationCard";
 import ExperienceCard from "../component/common/ExperienceCard";
-function about() {
+function AboutContent() {
   const data = {
     projects: [
       {
@@ -149,30 +148,6 @@ function about() {
           About Me
         </p>
       </div>
-
-      {/* ส่วนประวัติส่วนตัว */}
-      {/* <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto px-4 gap-8">
-        <div className=" flex flex-col md: justify-start text-center md:text-left">
-          <p className="text-hilight text-2xl w-fit md:text-4xl text-center md:text-left">ประวัติส่วนตัว</p>
-          <p className="text-2xl md:text-4xl w-fit font-semibold mb-2">Jeerasak Tajai</p>
-          <div className="max-w-md min-w-[448px] text-gray-300 leading-relaxed">
-            ผมชื่อ นายจีระศักดิ์ ต๋าใจ <br />
-            ชื่อเล่น นิว
-            <br />
-            เกิดวันที่ 19 มีนาคม 2545 <br />
-            เชื้อชาติ ไทย <br />
-            ศาสนา พุทธ <br />
-            ความสามารถพิเศษ <br />
-            เล่นกีต้าเป็น ร้องเพลงได้นิดหน่อย <br />
-            ความใฝ่ฝันอยากเป็นคนรวยครับ
-          </div>
-        </div>
-        <div className="flex justify-center mt-8 md:mt-0">
-          <div className="w-64 h-64 md:w-96  md:h-96 rounded-lg flex items-center justify-center">
-            <img src="/images/devicon_nextjs.png" alt="" className="max-w-full h-auto" />
-          </div>
-        </div>
-      </div> */}
       <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto  px-4">
         <div className="flex  flex-col items-center w-[540px] md:items-start text-center md:text-left order-2 md:order-1">
           <p className="text-3xl md:text-4xl font-semibold mb-2 w-fit hover:scale-105 hover:transition-all">
@@ -268,4 +243,4 @@ function about() {
   );
 }
 
-export default about;
+export default AboutContent;

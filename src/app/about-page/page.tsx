@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
- function About() {
+ function AboutPage() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -124,4 +124,4 @@ import Image from 'next/image';
   );
 }
 
-export default About;
+export default AboutPage;
