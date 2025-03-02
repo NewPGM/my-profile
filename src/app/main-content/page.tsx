@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 function Maincontent() {
   return (
     <div>
@@ -16,7 +16,7 @@ function Maincontent() {
         
         <div className=" flex justify-center  md:order-2 mb-6 md:mb-0">
           <div className=" md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg flex items-center justify-center hover:scale-105 hover:transition-all">
-            <img src="/images/devicon_nextjs.png" className="max-w-full h-auto " alt={''}  />
+            <Image src="/images/devicon_nextjs.png" className="max-w-full h-auto " alt={''}  fill/>
           </div>
         </div>
       </div>

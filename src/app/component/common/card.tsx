@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface BasicCardProps {
   title: string;
@@ -32,7 +33,7 @@ export const BasicCard: React.FC<BasicCardProps> = ({ title, description, imageU
       onClick={onClick}
     >
       {imageUrl && (
-        <img 
+        <Image 
           src={imageUrl}
           alt={title}
           className="w-full h-48 object-cover bg-white"

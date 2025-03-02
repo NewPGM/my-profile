@@ -33,23 +33,9 @@ import { useState, useEffect, ChangeEvent, FormEvent } from "react";
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
     // จำลองการส่งข้อมูลไปยัง API
-    try {
-      // ในโปรเจคจริงคุณจะเปลี่ยนเป็น fetch หรือ axios ที่เชื่อมต่อกับ API ของคุณ
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-
-      // รีเซ็ตสถานะหลังจาก 5 วินาที
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    }
   };
 
   return (

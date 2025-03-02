@@ -5,6 +5,7 @@ import { useState } from "react";
 import ProjectCard from "@/app/component/common/ProjectCard";
 import EducationCard from "../component/common/EducationCard";
 import ExperienceCard from "../component/common/ExperienceCard";
+import Image from "next/image";
 function AboutContent() {
   const data = {
     projects: [
@@ -182,10 +183,11 @@ function AboutContent() {
 
         <div className=" flex justify-center order-1 md:order-2 mb-6 md:mb-0">
           <div className="w-64 h-64 md:w-80 md:h-80 lg:w-80 lg:h-80 rounded-full flex items-center justify-center overflow-hidden border-4 border-orange-500 shadow-xl hover:scale-105 hover:transition-all">
-            <img
+            <Image
               src="/images/64143109.jpg"
               alt="Next.js Icon"
               className="max-w-full h-auto"
+              fill
             />
           </div>
         </div>
