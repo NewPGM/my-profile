@@ -187,7 +187,8 @@ function AboutContent() {
               src="/images/64143109.jpg"
               alt="Next.js Icon"
               className="max-w-full object-cover"
-              fill
+              width={320}
+              height={320}
             />
           </div>
         </div>

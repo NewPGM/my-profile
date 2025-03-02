@@ -16,7 +16,9 @@ function Maincontent() {
         
         <div className=" flex justify-center  md:order-2 mb-6 md:mb-0">
           <div className=" md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg flex items-center justify-center hover:scale-105 hover:transition-all">
-            <Image src="/images/devicon_nextjs.png" className="max-w-full object-cover " alt={''}  fill/>
+            <div className=' max-w-full object-cover'>
+            <Image src="/images/devicon_nextjs.png" className="object-cover " alt={''} width={250} height={250}/>
+            </div>
           </div>
         </div>
       </div>
