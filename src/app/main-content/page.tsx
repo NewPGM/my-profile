@@ -1,4 +1,5 @@
- function Maincontent() {
+
+function Maincontent() {
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto mt-24 md:mt-20 px-4 gap-8">
@@ -15,7 +16,7 @@
         
         <div className=" flex justify-center  md:order-2 mb-6 md:mb-0">
           <div className=" md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg flex items-center justify-center hover:scale-105 hover:transition-all">
-            <img src="/images/devicon_nextjs.png" alt="Next.js Icon" className="max-w-full h-auto" />
+            <img src="/images/devicon_nextjs.png" className="max-w-full h-auto " alt={''}  />
           </div>
         </div>
       </div>

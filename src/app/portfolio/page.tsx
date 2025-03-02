@@ -10,24 +10,24 @@ import { useState } from 'react';
       {
         "title": "Project 1",
         "description": "Description of Project 1",
-        "imageUrl": "https://example.com/project1.jpg"
+        "imageUrl": "/images/devicon_nextjs.png"
       },
       {
         "title": "Project 2",
         "description": "Description of Project 2",
-        "imageUrl": "https://example.com/project2.jpg"
+        "imageUrl": "/images/devicon_nextjs.png"
       }
     ],
     "certificates": [
       {
         "title": "Certificate 1",
         "description": "Description of Certificate 1",
-        "imageUrl": "https://example.com/certificate1.jpg"    
+        "imageUrl": "/images/devicon_nextjs.png"    
       },
       {
         "title": "Certificate 2",
         "description": "Description of Certificate 2",
-        "imageUrl": "https://example.com/certificate2.jpg"    
+        "imageUrl": "/images/devicon_nextjs.png"    
       }
     ],
     "skills": [

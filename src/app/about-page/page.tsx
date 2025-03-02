@@ -25,10 +25,9 @@ import Image from 'next/image';
           {/* รูปโปรไฟล์ */}
           <div className={`w-full md:w-1/3 transition-all duration-700 delay-300 ease-out ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-[-50px] opacity-0'}`}>
             <div className="relative w-64 h-64 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-orange-500 shadow-xl">
-              <Image 
+              <img
                 src="/images/64143109.jpg" 
                 alt="โปรไฟล์" 
-                fill
                 className="object-cover"
               />
             </div>
