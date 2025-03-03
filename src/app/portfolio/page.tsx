@@ -3,6 +3,9 @@ import { Icon } from "@iconify/react";
 import { BasicCard } from "../component/common/card";
 import { Button } from "@/app/component/common/Button";
 import { useState } from 'react';
+import SkillTag from "../component/common/SkillCard";
+import { Certificate } from "crypto";
+import CertificateCard from "../component/common/Certificate";
 
  function Portfolio() {
   const data = {
@@ -20,31 +23,257 @@ import { useState } from 'react';
     ],
     "certificates": [
       {
-        "title": "Certificate 1",
-        "description": "Description of Certificate 1",
-        "imageUrl": "/images/devicon_nextjs.png"    
+        id: 1,
+    title: "Certificate สำหรับพนักงานและเด็กฝึกงานดีเด่น จากบริษัท Dudee-Indeed Co.,Ltd",
+    description: "กิจกรรม แจกใบ Certificate สำหรับพนักงานและเด็กฝึกงานดีเด่น",
+    image: "/images/CC/CC.png",
+    issuedBy: "คุณธนกร ศิรินทร์ CEO/Manager(Chief Executive Officer)",
+    issueDate: "ธันวาคม 2567",
+    certificateLink: "https://example.com/certificate/react"
       },
       {
-        "title": "Certificate 2",
-        "description": "Description of Certificate 2",
-        "imageUrl": "/images/devicon_nextjs.png"    
-      }
+        id: 2,
+    title: "การพัฒนา JAVA Web Applocation ด้วย Spiring boot Framework และ Angular JS",
+    description: "กิจกรรมพี่สอนน้อง การพัฒนา JAVA Web Applocation ด้วย Spiring boot Framework และ Angular JS",
+    image: "/images/CC/java.png",
+    issuedBy: "ผู้ช่วยศาสตราจารย์ ดร.รสลิน เพตะกร หัวหน้าภาควิชาคอมพิวเตอร์",
+    issueDate: "มีนาคม 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 3,
+    title: "โครงการส่งเสริมสมรรถนะและทักษะด้านดิจิทัล สำหรับนักศึกษาชั้นปีสุดท้าย",
+    description: "กิจกรรม โครงการเพิ่มพูนทักษะวิชาการและทักษะแห่งศตวรรษ ที่ ๒๑ กิจกรรม โครงการส่งเสริมสมรรถนะและทักษะด้านดิจิทัล สำหรับนักศึกษาชั้นปีสุดท้าย",
+    image: "/images/CC/cmru.png",
+    issuedBy: "ผู้ช่วยศาสตราจารย์ ดร.รสลิน เพตะกร หัวหน้าภาควิชาคอมพิวเตอร์",
+    issueDate: "กรกฎาคม 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 4,
+      title: "เตรียมความพร้อมและทบททวนความรู้สมรรถนะดิจิทัล(Digital Literacy)",
+      description: "กิจกรรม เตรียมความพร้อมและทบททวนความรู้สมรรถนะดิจิทัล(Digital Literacy)",
+      image: "/images/CC/DL.png",
+      issuedBy: "ผู้ช่วยศาสตราจารย์ ดร.กัลยา ใจรักษ์ ผู้อํานวยการสำนักงานดิจิทัล",
+      issueDate: "สิงหาคม 2567",
+      certificateLink: "https://example.com/certificate/react"
+    },
+      {
+        id: 4,
+    title: "Design Thinking",
+    description: "ผ่านอบรม Design Thinking set e-learning",
+    image: "/images/CC/design.png",
+    issuedBy: "SET",
+    issueDate: "มิถุนายน 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 5,
+    title: "Digital Marketing",
+    description: "ผ่านอบรม Digital Marketing set e-learning",
+    image: "/images/CC/DSMT.png",
+    issuedBy: "SET",
+    issueDate: "กรกฎาคม 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 6,
+    title: "UX Development",
+    description: "ผ่านอบรม UX Development set e-learning",
+    image: "/images/CC/UX.png",
+    issuedBy: "SET",
+    issueDate: "กรกฎาคม 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 7,
+    title: "Customer Validation",
+    description: "ผ่านอบรม Customer Validation set e-learning",
+    image: "/images/CC/CV.png",
+    issuedBy: "SET",
+    issueDate: "มิถุนายน 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 8,
+    title: "Content Creater ออนไลน์",
+    description: "ผ่านอบรม Content Creater ออนไลน์ set e-learning",
+    image: "/images/CC/CCO.png",
+    issuedBy: "SET",
+    issueDate: "มิถุนายน 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
+      {
+        id: 9,
+    title: "เปลี่ยนการถ่ายภาพเป็นรายได้แบบมืออาชีพ",
+    description: "ผ่านอบรมเปลี่ยนการถ่ายภาพเป็นรายได้แบบมืออาชีพ set e-learning",
+    image: "/images/CC/Photo.png",
+    issuedBy: "SET",
+    issueDate: "มิถุนายน 2567",
+    certificateLink: "https://example.com/certificate/react"   
+      },
     ],
     "skills": [
       {
-        "title": "Skill 1",
-        "description": "Description of Skill 1"
+        id: 1,
+      name: "React",
+      icon: "skill-icons:react-light",
+      category: "Frontend",
+      color: "#61DAFB"
       },
       {
-        "title": "Skill 2",
-        "description": "Description of Skill 2"
-      }
+        id: 2,
+      name: "Node.js",
+      icon: "devicon:nodejs",
+      category: "Backend",
+      color: "#339933"
+      },
+      {
+        id: 3,
+      name: "Vue.js",
+      icon: "skill-icons:vuejs-light",
+      category: "Frontend",   
+      color: "#47A248"
+      },  
+      {
+        id: 4,
+      name: "Next.js",
+      icon: "skill-icons:nextjs-dark",
+      category: "Frontend",
+      color: "#ededed"
+      },
+      {
+        id: 5,
+      name: "Tailwind CSS",
+      icon: "skill-icons:tailwindcss-light",
+      category: "Frontend",
+      color: "#06B6D4"
+      },
+      {
+        id: 6,
+      name: "HTML",
+      icon: "skill-icons:html",
+      category: "Frontend",
+      color: "#ff6600"
+      },
+      {
+        id: 7,
+      name: "JavaScript",
+      icon: "skill-icons:javascript",
+      category: "Frontend",
+      color: "#F7DF1E"
+      },
+      {
+        id: 8,
+      name: "Pug",
+      icon: "skill-icons:pug-light",
+      category: "Frontend",
+      color: "#A86454"
+      },
+      {
+        id: 9,
+      name: "CSS",
+      icon: "skill-icons:css",
+      category: "Frontend",
+      color: "#1572B6"
+      },
+      {
+        id: 10,
+      name: "Nuxt.js",
+      icon: "skill-icons:nuxtjs-dark",
+      category: "Frontend",
+      color: "#00DC82"
+      },
+      {
+        id: 11,
+      name: "Git",
+      icon: "skill-icons:git",
+      category: "Frontend",
+      color: "#F05032"
+      },
+      {
+        id: 12,
+      name: "GitHub",
+      icon: "skill-icons:github-dark",
+      category: "Frontend",
+      color: "#ededed"
+      },
+      {
+        id: 13,
+      name: "Figma",
+      icon: "skill-icons:figma-dark",
+      category: "Design",
+      color: "#F24E1E"
+      },
+      {
+        id: 14,
+      name: "Rast API",
+      icon: "hugeicons:api",
+      category: "Backend",
+      color: "#ededed"
+      },
+      {
+        id: 15,
+      name: "Clickup",
+      icon: "lineicons:clickup",
+      category: "Project Management",
+      color: "#ededed"
+      },
+      {
+        id: 16,
+      name: "Fork",
+      icon: "file-icons:fork",
+      category: "Frontend",
+      color: "#1572B6"
+      },
+      {
+        id:17,
+      name: "Postman",
+      icon: "vscode-icons:file-type-postman",
+      category: "Backend",
+      color: "#FF6C37"
+      },
+      {
+        id: 18,
+      name: "Visual Studio Code",
+      icon: "vscode-icons:file-type-vscode",
+      category: "Frontend",
+      color: "#007ACC"
+      },
+      {
+        id: 19,
+      name: "Notion",
+      icon: "devicon:notion",
+      category: "Frontend",
+      color: "#ededed"
+      },
+      {
+        id: 20,
+      name: "Yarn",
+      icon: "vscode-icons:file-type-yarn",
+      category: "Frontend",
+      color: "#2C8EBB"
+      },
+      {
+        id: 21,
+      name: "GitLab",
+      icon: "vscode-icons:file-type-gitlab",
+      category: "Frontend",
+      color: "#FF6C37"
+      },
+      {
+        id: 22,
+      name: "Miro",
+      icon: "logos:miro-icon",
+      category: "Frontend",
+      color: "#FCA326"
+      },
     ]
   };
   
   const [isClickedProject, setIsClickedProject] = useState(false);
   const [isClickedCertificate, setIsClickedCertificate] = useState(false);
-  const [isClickedSkill, setIsClickedSkill] = useState(false);
+  const [isClickedSkill, setIsClickedSkill] = useState(true);
 
   const ClickButtonProject = () => {
     setIsClickedProject(!isClickedProject)
@@ -106,34 +335,17 @@ import { useState } from 'react';
     </Button>
   </div>
   
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 mt-6 md:mt-10">
-    {isClickedProject && data.projects?.map((item, index) => (
-      <BasicCard 
-        key={index} 
-        title={item.title} 
-        description={item.description} 
-        imageUrl={item.imageUrl} 
-        className=""
-      />
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto px-4 mt-6 md:mt-10">
+    {isClickedProject && data.certificates?.map((item, index) => (
+      <CertificateCard key={index} certificate={item} />
     ))}
     
     {isClickedCertificate && data.certificates?.map((item, index) => (
-      <BasicCard 
-        key={index} 
-        title={item.title} 
-        description={item.description} 
-        imageUrl={item.imageUrl} 
-        className=""
-      />
+      <CertificateCard key={index} certificate={item} />
     ))}
     
     {isClickedSkill && data.skills?.map((item, index) => (
-      <BasicCard 
-        key={index} 
-        title={item.title} 
-        description={item.description} 
-        className=""
-      />
+      <SkillTag  key={index} skill={item}  />
     ))}
   </div>
 </div>

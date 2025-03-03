@@ -119,7 +119,7 @@ function AboutContent() {
   };
 
   
-  const [isClickedProjects, setIsClickedProjects] = useState(false);
+  const [isClickedProjects, setIsClickedProjects] = useState(true);
   const [isClickedEI, setIsClickedEI] = useState(false);
   const [isClickedExperience, setIsClickedExperience] = useState(false);
 
@@ -172,11 +172,12 @@ function AboutContent() {
               <span>ร้องเพลง ถึงจะไม่ได้มืออาชีพ แต่ก็ร้องจากใจ!</span>
             </div>
             <p>เป้าหมายในชีวิต</p>
-            <br />
-            <div className="flex justify-start items-start">
-              <div className="w-2 h-2  rounded-full mr-2"></div>
-              <p>ผมมุ่งมั่นที่จะประสบความสำเร็จ และอยากมีชีวิตที่มั่นคง</p>
-              <p>แต่ต้องการสร้างคุณค่าและความมั่งคั่งให้กับตัวเองและคนรอบข้างครับ</p>
+            <div className=" justify-start items-center">
+            <div className="flex justify-start items-center">
+            <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+              <p>เป้าหมายในชีวิตคือการเรียนรู้และพัฒนาตนเองให้ดียิ่งขึ้น</p>
+            </div>
+            <p className="ml-4">และต้องการสร้างสรรค์สิ่งใหม่ๆ ที่มีประโยชน์ต่อสังคม</p>
             </div>
           </div>
         </div>
@@ -213,7 +214,7 @@ function AboutContent() {
             className="text-4xl md:text-5xl"
           />
           <p className="text-hilight  text-2xl  md:w-[140px]">
-            educational institution
+            Educational Institution
           </p>
         </Button>
         <Button
@@ -221,7 +222,7 @@ function AboutContent() {
           onClick={ClickButtoEnxperience}
         >
           <Icon icon="mdi:company" className="text-4xl md:text-5xl" />
-          <p className="text-hilight text-2xl md: text-center">experience</p>
+          <p className="text-hilight text-2xl md: text-center">Experience</p>
         </Button>
       </div>
 
