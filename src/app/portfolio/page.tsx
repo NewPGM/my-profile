@@ -1,10 +1,8 @@
 'use client';
 import { Icon } from "@iconify/react";
-import { BasicCard } from "../component/common/card";
 import { Button } from "@/app/component/common/Button";
 import { useState } from 'react';
 import SkillTag from "../component/common/SkillCard";
-import { Certificate } from "crypto";
 import CertificateCard from "../component/common/Certificate";
 
  function Portfolio() {
