@@ -308,14 +308,14 @@ function AboutContent() {
 
       {/* ส่วนปุ่มเลือกหมวดหมู่ */}
       <div className="flex flex-col justify-center sm:flex-row items-center gap-4 sm:gap-10 items-center max-w-6xl mx-auto px-4 my-10">
-        <Button
+        {/* <Button
           className="box h-[100px] w-full sm:w-full gap-4"
           variant="primary"
           onClick={ClickButtonProjects}
         >
           <Icon icon="line-md:github-loop" className="text-4xl md:text-5xl" />
           <p className="text-hilight text-2xl md:text-center">Project </p>
-        </Button>
+        </Button> */}
         <Button
           className="box h-[100px] w-full sm:w-full gap-4"
           onClick={ClickButtonEI}
