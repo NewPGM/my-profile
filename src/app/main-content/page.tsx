@@ -2,15 +2,18 @@ import Image from 'next/image'
 function Maincontent() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto mt-24 md:mt-20 px-4 gap-8">
-        <div className="flex flex-col items-center gap-4 md:items-start text-center md:text-left order-2 md:order-1">
-          <p className="text-3xl md:text-4xl font-semibold mb-2 w-fit hover:scale-105 hover:transition-all">FrontEnd</p>
-          <p className="text-hilight text-3xl md:text-4xl mb-4 md:mb-6 hover:scale-105 hover:transition-all">Developer</p>
-          <div className="max-w-md text-gray-300 leading-relaxed ">
-            ผมเป็นคนชอบเรียนรู้สิ่งใหม่ๆ และพัฒนาตัวเองอยู่เสมอ
-            มีความมุ่งมั่นตั้งใจในการทำงาน
-            ผมมีความสนใจในด้านเทคโนโลยีและการพัฒนาซอฟต์แวร์
-            โดยหวังว่าจะได้นำความรู้และประสบการณ์มาใช้ให้เกิดประโยชน์กับองค์กรครับ
+      <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto mt-24 md:mt-20 px-4 gap-8 ">
+        <div className="flex flex-col items-center gap-4 md:items-start text-center w-full mt-10 md:text-left order-2 md:order-1">
+          <p className="text-3xl md:text-4xl font-semibold mb-2 w-fit hover:scale-105 hover:transition-all">Welcome to my Website.</p>
+          <p className="text-hilight text-3xl md:text-4xl mb-4 md:mb-6 hover:scale-105 hover:transition-all">สวัสดีครับ ผม นายจีระศักดิ์ ต๋าใจ</p>
+          <div className=" text-gray-300 leading-relaxed md:w-[800px]">
+          ผมสำเร็จการศึกษาจาก มหาวิทยาลัยราชภัฏเชียงใหม่ สาขาวิทยาการคอมพิวเตอร์ มีความสนใจและความชำนาญในการเขียนโปรแกรม รวมถึงการพัฒนาเว็บไซต์ โดยมีพื้นฐานที่แข็งแรงในด้านการวางแผน การคิดเชิงตรรกะ (Algorithmic Thinking) และการทำงานร่วมกับผู้อื่นอย่างมีประสิทธิภาพ
+
+นอกจากด้านโปรแกรมมิ่ง ผมยังมีประสบการณ์ในการ ออกแบบกราฟิก ด้วยเครื่องมืออย่าง Photopea และ Figma และสามารถ ตัดต่อวิดีโอ ด้วย CapCut ได้อย่างคล่องแคล่ว
+
+ปัจจุบันผมมีช่อง YouTube ที่เน้นเนื้อหาเกี่ยวกับ การสอนลง Mod เกม ซึ่งช่วยพัฒนาทักษะการสื่อสาร การอธิบาย และการสร้างคอนเทนต์ให้เข้าใจง่ายสำหรับผู้ชม
+
+ผมเคยมีประสบการณ์ในการ ขับแกร็บ ซึ่งทำให้ได้ฝึกการสื่อสารกับลูกค้า การแก้ปัญหาเฉพาะหน้า และการบริการที่มีคุณภาพ รวมถึงมี ความสามารถในการถ่ายภาพ ซึ่งช่วยเสริมทักษะการมองเห็นในมุมมองเชิงสร้างสรรค์อีกด้วย
           </div>
         </div>
         

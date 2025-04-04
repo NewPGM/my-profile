@@ -1,5 +1,5 @@
 
-import "./globals.css";;
+import "./globals.css";
 
  function RootLayout({
   children,
@@ -10,9 +10,9 @@ import "./globals.css";;
     <html lang="th">
       <body>
       <nav>
-        <div className="flex items-center justify-between w-full ">
+        <div className="flex items-center gap-10 md:justify-between w-full">
         <p className="text-hilight text-2xl font-bold">Portfolio Website</p>
-        <div className="flex gap-8">
+        <div className="flex gap-2 md:gap-8 ">
         <a href="/home-page">Home</a>
         <a href="/about-page">About</a>
         <a href="/contact-page">Contact</a>
