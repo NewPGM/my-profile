@@ -228,10 +228,6 @@ function AboutContent() {
             </div>
             <div className="flex justify-start items-center">
               <div className="w-2 h-2 bg-orange-0 md:bg-orange-500 rounded-full mr-2 "></div>
-              <span>ไม่กล้าขอความช่วยเหลือ</span>
-            </div>
-            <div className="flex justify-start items-center">
-              <div className="w-2 h-2 bg-orange-0 md:bg-orange-500 rounded-full mr-2 "></div>
               <span>ชอบกดดันตัวเอง</span>
             </div>
             
